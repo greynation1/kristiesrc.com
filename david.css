@@ -1,0 +1,277 @@
+<STYLE type=text/css>
+
+
+h1 	{ 
+	text-align: center; 
+	FONT-SIZE: xx-large; 
+	FONT-FAMILY: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman; 
+	border: solid .1em; 
+	border-color: white; 
+	color: #FEF5CA;
+	}
+
+body 	{ 
+	margin: 30px;
+	height: 100%; 
+	background-color: none; 
+	color: #000000; 
+	text-align: center; 
+	font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman; 
+	font-size: 12px; 
+	background-image: url(images/brownbackground.png); 
+	background-repeat: repeat; 
+	background-attachment: fixed; 
+	}
+
+/*Paragraph Styles..........................*/
+
+p 	{ 
+	font-size: small;
+	font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;
+	text-decoration: none;
+	color: black;
+	}
+
+p.head	{
+	font-size: large;
+	font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;
+	text-decoration: none;
+	color: black;
+	padding-top: 1cm;
+	text-indent: .8cm;
+	}
+	
+
+/*List Styles................................*/
+
+ul.disc 
+	{list-style-type: disc; font-size: small; font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman; font-color: black}
+ul.circle 
+	{list-style-type: circle; font-size: small; font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;}
+ul.square 
+	{list-style-type: square; font-size: small; font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;}
+ul.none 
+	{list-style-type: none; font-size: small; font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;}
+ul.paw
+	{list-style-image: url(images/paw2.jpg); font-size: small; font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;}
+
+/*Link Properties............................*/
+
+a:link	  { color: #8B4513; text-decoration: none; }
+a:visited { color: #CD661D; text-decoration: none; }
+a:active  { color: #8DB6CD; text-decoration: none; }
+a:hover	  { color: #6495ED; text-DECORATION: none;}
+
+
+/*Collumns and Containers....................*/
+
+#container 
+	{ 
+	background-color: #FEF5CA; 
+	margin: 50px auto 0; 
+	/*margin: 50px auto 0; */
+	padding: 5px; 
+	width: 764px; 
+	text-align: left; 
+	vertical-align: middle; 
+	z-index: 2; 
+	border: solid 1px black; 
+	/*transparency*/
+	/* for IE 
+  	filter:alpha(opacity=60);
+  	/* CSS3 standard 
+  	opacity:0.6;*/
+	}
+
+#sidebar
+	{
+	/*border-right-style: solid;
+	border-right-width: 1.5px;
+	border-right-color: #8B4513;
+	border-bottom-style: solid;
+	border-bottom-width: 1.5px;
+	border-bottom-color: #8B4513;*/
+	float: left;
+	width: 150px;
+	margin: 40 0 0 0;
+	padding: 2px;
+	background-color: transparent;
+	font-size: small; 
+	font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman; 
+	color: black;
+	}
+
+#sidebar2
+	{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #8B4513;
+	float: left;
+	width: 135px;
+	/*text-align: center;*/
+	margin: 0 0 0 0;
+	padding: 2px;
+	background-color: transparent;
+	font-size: small; 
+	font-family: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman; 
+	color: black;
+	}
+
+#centercolumn 
+	{ 
+	border-top-style: solid; 
+	border-top-width: 1.5px;
+	border-top-color: #8B4513; 
+	border-botton-style: solid; 
+	border-bottom-width: 1.5px;
+	border-bottom-color: #8B4513;
+	padding: 10px;
+	background-color: transparent; 
+	margin:0 50 0 175px; 
+	z-index: 0;
+	}
+
+#subcolumn
+	{
+	border-top-style: solid; 
+	border-top-width: 1.5px;
+	border-top-color: #8B4513; 
+	padding: 0px;
+	background-color: transparent; 
+	margin:0 0 0 0px; 
+	z-index: 0;
+	}
+
+
+/*Headings..................................*/
+
+#title	{
+	padding: 15px;
+	text-align: center; 
+	FONT-SIZE: xx-large; 
+	FONT-FAMILY: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman; 
+	color: #FEF5CA;
+	}
+
+
+#footer	{
+	padding: 15px;
+	text-align: center; 
+	FONT-SIZE: small; 
+	FONT-FAMILY: comic sans ms, cursive; candara, optima, tunga, arial, georgia, times new roman;
+	color: #FEF5CA;
+	}
+
+#hidder	{
+	font-size:xx-small;
+	}
+
+
+/*Images....................................*/
+
+
+.gallerycontainer
+	{
+	position: relative;
+	height: 600px;
+	}
+
+.thumbnail img
+	{
+	border: 1px solid #8B4513;
+	margin: 5 5 5 5;
+	}
+
+.thumbnail:hover
+	{
+	background-color: transparent;
+	}
+
+.thumbnail:hover img
+	{
+	border: 1px solid #8DB6CD;
+	}
+
+.thumbnail span
+	{ 
+	/*enlarged image*/
+	position: absolute;
+	background-color: transparent;
+	padding: 0px;
+	left: -1000px;
+	border: none;
+	visibility: hidden;
+	color: black;
+	text-decoration: none;
+	}
+
+.thumbnail span img
+	{ 
+	/*enlarged image*/
+	border-width: 0;
+	padding: 0px;
+	}	
+
+.thumbnail:hover span
+	{
+	/*enlarged image*/
+	visibility: visible;
+	top: 0;
+	left: 230px; /*position where enlarged image should offset horizontally */
+	z-index: 50;
+	}
+
+/*Friends Pictures Hover Properties........................................*/
+
+.gallerycontainer2
+	{
+	position: relative;
+	height: 320px;
+	}
+
+.thumbnail2 img
+	{
+	border: 1px solid #8B4513;
+	margin: 5 5 5 5;
+	}
+
+.thumbnail2:hover
+	{
+	background-color: transparent;
+	}
+
+.thumbnail2:hover img
+	{
+	border: 1px solid #8DB6CD;
+	}
+
+.thumbnail2 span
+	{ 
+	/*enlarged image*/
+	position: absolute;
+	background-color: transparent;
+	padding: 0px;
+	left: -1000px;
+	border: none;
+	visibility: hidden;
+	color: black;
+	text-decoration: none;
+	}
+
+.thumbnail2 span img
+	{ 
+	/*enlarged image*/
+	border-width: 0;
+	padding: 0px;
+	}	
+
+.thumbnail2:hover span
+	{
+	/*enlarged image*/
+	visibility: visible;
+	top: -50;
+	left: 100px; /*position where enlarged image should offset horizontally */
+	z-index: 20;
+	}
+
+</STYLE>
